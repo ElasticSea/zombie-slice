@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using BLINDED_AM_ME;
+// using BLINDED_AM_ME;
 using UnityEngine;
 
 public class Cutter : MonoBehaviour
@@ -12,7 +12,7 @@ public class Cutter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MeshCut.Cut(victim, transform.position, transform.up, material);
+        // MeshCut.Cut(victim, transform.position, transform.up, material);
     }
 
     // Update is called once per frame

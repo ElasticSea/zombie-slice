@@ -13,12 +13,9 @@ public class SliceTester : MonoBehaviour
     void Start()
     {
         animator = slicer.GetComponent<Animator>();
+        // slicer.SliceByMeshPlane(transform.up, transform.position);
     }
-    void Update() 
-    {
-        if (Input.GetButtonDown("Attack") && isDebug)
-            slicer.SliceByMeshPlane(transform.up, transform.position);
-    }
+    
     /// <summary>
     /// It's important to set the normal vertical to the plane for slice, e.g, we set to transform.forward here
     /// </summary>

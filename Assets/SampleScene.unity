@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 117494232}
   - component: {fileID: 117494231}
+  - component: {fileID: 117494233}
   m_Layer: 0
   m_Name: Cutter
   m_TagString: Untagged
@@ -161,14 +162,35 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117494230}
-  m_LocalRotation: {x: -0, y: -0, z: 0.044802357, w: 0.9989959}
-  m_LocalPosition: {x: 0.71, y: 0.23, z: -0.991}
+  m_LocalRotation: {x: 0.7063968, y: 0.031680055, z: 0.03168005, w: 0.70639676}
+  m_LocalPosition: {x: -0.137, y: 1.647, z: 0.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5.136}
+  m_LocalEulerAnglesHint: {x: 84.864, y: 90, z: 90}
+--- !u!114 &117494233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117494230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3404b18c4fc6b945ba4c7f05d21870c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDebug: 0
+  slicer: {fileID: 1711678441}
+  legTag: Leg
+  rootBone: {fileID: 224247096}
+--- !u!4 &224247096 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5465940246521907071, guid: cfdfb5e341f21ad42a93997cf108b31d, type: 3}
+  m_PrefabInstance: {fileID: 2077298665}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,6 +449,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1711678441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711678437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afd7e9e9467f23943ad228e95edc8bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Asynchronously: 1
+  nowCapMode: 0
+  capMaterial: {fileID: 2100000, guid: c03c479c6f913d745ac7ff17e74c09c9, type: 2}
+  minBoundsLength: 0.05
 --- !u!1001 &2077298665
 PrefabInstance:
   m_ObjectHideFlags: 0

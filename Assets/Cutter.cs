@@ -25,6 +25,6 @@ public class Cutter : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.matrix = transform.localToWorldMatrix;
-        Gizmos.DrawCube(new Vector3(0, 0, -0.25f), new Vector3(1, 0, 0.5f));
+        Gizmos.DrawCube(new Vector3(0, -0.25f, 0), new Vector3(1,  0.5f, 0));
     }
 }
